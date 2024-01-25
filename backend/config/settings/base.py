@@ -44,9 +44,7 @@ ALLOWED_HOSTS = ["*"]
 
 # Application definition
 LOCAL_APPS = [
-    "apps.categories",
-    "apps.products",
-    "apps.accounts",
+    
 ]
 
 INSTALLED_APPS = [
