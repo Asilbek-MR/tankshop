@@ -1,4 +1,13 @@
-django==5.0
-gunicorn==21.2.0
-djangorestframework==3.14.0
-requests==2.31.0
+django==4.2.8
+python-decouple
+djangorestframework
+gunicorn
+psycopg2-binary
+Pillow
+django-modeltranslation
+drf-yasg
+django-cors-headers
+django-filter
+python-dateutil
+
+sentry-sdk[django]
