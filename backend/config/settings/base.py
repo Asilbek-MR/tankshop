@@ -44,7 +44,8 @@ ALLOWED_HOSTS = ["*"]
 
 # Application definition
 LOCAL_APPS = [
-    
+'apps.poster',
+'apps.accounts'
 ]
 
 INSTALLED_APPS = [
@@ -78,19 +79,13 @@ CSRF_TRUSTED_ORIGINS = [
     "http://0.0.0.0:8000/",
     "http://0.0.0.0",
     "http://0.0.0.0:8000",
-    "https://manecafe.uz",
-    "https://api.manecafe.uz/",
-    "https://api.manecafe.uz",
-    "https://manecafe.uz/",
+    
 ]  # ngrok temporary url
 CORS_ALLOW_ALL_ORIGINS = True
 # CORS ORIGIN
 # CORS_ALLOWED_ORIGINS = [
 #     "http://localhost:8000",
 #     # "http://localhost:8000/",
-#     "http://127.0.0.1:8000",
-#     "https://manecafe.uz"
-#     # "http://127.0.0.1:8000/",
 #     # Add other origins as needed
 # ]
 
@@ -100,7 +95,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_HEADERS = "*"
-DOMAIN_NAME = "https://api.manecafe.uz/"
+DOMAIN_NAME = "*"
 
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
@@ -174,7 +169,7 @@ AUTH_PASSWORD_VALIDATORS = [
         "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",
     },
 ]
-AUTH_USER_MODEL = "accounts.User"
+# AUTH_USER_MODEL = "accounts.User"
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
