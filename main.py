@@ -1,9 +1,9 @@
-from instabot import Bot
-bot = Bot()
+# from instabot import Bot
+# bot = Bot()
 
-bot.login(username="asil_bekbaxodirov", password="asilbek99")
+# bot.login(username="asil_bekbaxodirov", password="asilbek99")
 
-bot.upload_photo("123123.jpg",caption="upodaet by fristly picture")
+# bot.upload_photo("123123.jpg",caption="upodaet by fristly picture")
 
 
 
@@ -32,3 +32,24 @@ bot.upload_photo("123123.jpg",caption="upodaet by fristly picture")
 
 # # Skriptni ishga tushirish
 # upload_video(username, password, video_path, caption)
+
+
+from instapy_cli import client
+
+username = 'asilbek_26_'
+password = 'asilbek99'
+video_path = 'chezol.mp4'
+caption = "Upload video"
+
+with client(username, password) as cli:
+    cli.upload(video_path, caption)
+
+# Your credentials and video path
+
+# Run the upload function
+# upload_video(username, password, video_path, caption)
+
+
+
+
+
